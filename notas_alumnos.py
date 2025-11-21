@@ -1,20 +1,59 @@
 
-# Programa de notas - Pruba 1: Calcula el promedio de un alumno y dice si aprueba
+# Programa de notas - Prueba 2: Calcula el promedio de varios alumnos y estadísticas simples
 
-print("****Cálculo de promedio de un alumno****")
+print("****Programa de notas de alumnos****")
 
-nombre = input("Ingrese el nombre del alumno: ").strip()
-nota_1 = float(input("Ingrese la nota 1: ").strip())
-nota_2 = float(input("Ingrese la nota 2: ").strip())
-nota_3 = float(input("Ingrese la nota 3: ").strip())
+# Pedir cantidad de alumnos
 
-promedio = (nota_1 + nota_2 + nota_3) / 3
+cantidad_alumnos = int(input("¿Cuántos alumnos deses cargar?: "))
 
-print(f"Alumno: {nombre}")
-print(f"Promedio: {promedio:.2f}")
+# Listas para guardar datos
+nombres = []
+promedios = []
 
-if promedio >= 7:
-    print("Estado: Aprobado")
+aprobados = 0
+desaprobados = 0
 
-else:
-    print("Estado: Desaprobado")
+# Cargar alumnos con un ciclo for
+for i in range(cantidad_alumnos):
+    print("Alumno", i+1)
+    
+    nombre = input("Nombre: ").strip()
+    nota_1 = float(input("Nota 1: "))
+    nota_2 = float(input("Nota 2: "))
+    nota_3 = float(input("Nota 3: "))
+
+    promedio = (nota_1 + nota_2 + nota_3) / 3
+    
+    nombres.append(nombre)
+    promedios.append(promedio)
+
+# Vr si aprueba
+
+    if promedio >= 7:
+        aprobados += 1
+        estado = "Aprobado"
+    else:
+        desaprobados += 1
+        estado = "Desaprobado"
+    
+    print(f"Promedio de {nombre}: {promedio:.2f} => {estado}")
+    
+# Estadísticas finales
+print("****Resultados Generales****")
+print("Cantidad de alumnos:", cantidad_alumnos)
+print("Aprobados (>= 7):", aprobados)
+print("Desaprobados:", desaprobados)
+
+promedio_general = sum(promedios) / cantidad_alumnos
+print(f"Promedio general del curso: {promedio_general:.2f}")
+
+mejor_promedio = max(promedios)
+indice_mejor = promedios.index(mejor_promedio)
+nombre_mejor = nombres[indice_mejor]
+
+print(f"Mejor promedio: {nombre_mejor} con {mejor_promedio:.2f}")
+
+
+
+
