@@ -1,4 +1,4 @@
-# Trabajo Práctico Integrador – Administración y Sistemas Operativos (AySO)
+# Trabajo Práctico Integrador – Arquitectura y Sistemas Operativos (AySO)
 
 Este repositorio contiene el Trabajo Práctico Integrador de la materia AySO, realizado en el entorno de una Máquina Virtual Ubuntu y acompañado por el desarrollo de un script en Python para la gestión de notas de alumnos.
 
