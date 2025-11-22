@@ -40,7 +40,12 @@ Abrir una terminal y ejecutar:
 python3 notas_alumnos.py
 ---
 
-## 👤 Autor
+---
+
+## Autor
 
 **Fernando Picco**  
+Trabajo presentado en el marco de la asignatura  
+**Arquitectura y Sistemas Operativos (AySO)**  
 Tecnicatura Universitaria en Programación – UTN
+
