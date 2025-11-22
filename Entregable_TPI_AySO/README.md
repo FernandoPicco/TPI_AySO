@@ -39,7 +39,17 @@ Abrir una terminal y ejecutar:
 ```bash
 python3 notas_alumnos.py
 ---
+El programa permitirá:
 
+- Ingresar varios alumnos
+
+- Cargar tres notas por alumno
+
+- Calcular su promedio
+
+- Mostrar cuántos aprobaron y desaprobaron
+
+- Repetir carga si el usuario lo desea
 ---
 
 ## Autor
